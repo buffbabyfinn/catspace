@@ -6,50 +6,72 @@
     <link rel="stylesheet" href="bootstrap/css/styles.css">
     <script src="bootstrap/js/jquery-1.12.0.js"></script>
     <script src="bootstrap/js/scripts.js"></script>
-    <title>You Won the Lottery!</title>
+    <title>CatSpace</title>
   </head>
   <body>
     <!-- HEADER -->
+    <div class="content">
     <div class="jumbotron">
-      <h1>Default Lottery Winner Letter</h1>
+      <h1>CatSpace</h1>
+      <h3>A Live Cat Journal</h3>
+      <img src="img/cats_allowed.jpg" alt="No Dogs Allowed!">
     </div>
     <!-- END HEADER -->
-    <!-- FORM -->
-    <div id="blanks">
-      <form class="container">
-        <div class="form-group">
-          <label for="name">Winner's Name</label>
-          <input id="name" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="prize">Winner's Prize</label>
-          <input id="prize" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="amount">Payment amount</label>
-          <input id="amount" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="location">Location for pickup</label>
-          <input id="location" class="form-control" type="text">
-        </div>
 
-        <button type="submit" class="btn btn-warning btn-lg">Show me the MONEY!</button>
-      </form>
+      <!-- FORM -->
+      <div id="blanks" class="row">
+        <form class="container col-xs-6-offset-3">
+          <h2>Mouse Problem? Fill out the form below!</h2>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="numMice">How Many Mice?</label>
+            <input id="numMice" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="phone">Your Phone Number</label>
+            <input id="phone" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="payment">How Much Catnip for Payment?</label>
+            <input id="payment" class="form-control" type="text">
+          </div>
+
+          <button type="submit" class="btn btn-warning btn-lg">Meow</button>
+        </form>
+      </div>
+      <!-- END FORM -->
+      <!-- Letter -->
+      <div id="letter" class="container">
+        <p>
+          Dear <span class="name"></span>,
+        </p>
+        <p>
+          I have recieved your application for my mouse removal services. <span class="numMice">
+          </span> mice shall be removed from your residence within the next fourteen days. Upon removal,
+          I will contact <span class="phone"></span> to confirm your problem is no longer a problem.
+          Your payment of <span class="payment"></span> of catnip has been recieved and deemed sufficient.
+        </p>
+        <p>
+          I will be in touch,
+        </p>
+        <p>
+          Catsmouth Catson Cattington IV
+        </p>
+      </div>
+      <!-- END Letter -->
+
+    <!-- STYLE BUTTONS -->
+    <div class="container themes">
+      <h3>Push the buttons below to change the theme of my CatSpace Page!</h3>
+      <button type="btn btn-lg" id=futureCat>Future Cat!</button>
+      <button type="btn btn-lg" id=cuteCat>Cute Cat!</button>
+      <button type="btn btn-lg" id=adventureCat>Adventure Cat!</button>
     </div>
-    <!-- END FORM -->
-    <!-- Letter -->
-    <div id="letter" class="container">
-      <p>
-        Dear <span class="name"></span>,
-      </p>
-      <p>
-        Lorem prize winner ipsum dolor sit amet, <span class="prize"></span>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span class="amount"></span>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Lorem prize winner ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <span class="location"></span>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+    <!-- END STYLE BUTTONS -->
     </div>
-    <!-- END Letter -->
-  </body>
+    <!-- END CONTENT -->
+    </body>
 </html>

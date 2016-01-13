@@ -1,7 +1,28 @@
 .jumbotron {
   text-align: center;
+  margin: 0 2em 0 2em;
+  border-radius: 45px;
 }
 
 #letter {
   display: none;
+}
+
+.row {
+  text-align: center;
+}
+
+.layout1{
+  background: url("file:///Users/Guest/Desktop/dom-practice/catspace/img/nyanground.jpg");
+  background-size: cover;
+  color: #97FFFF
+}
+
+.layout2{
+
+
+}
+
+.layout3{
+
 }
